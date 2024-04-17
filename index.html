@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Algorithm Visualizer</title>
+</head>
+
+<body>
+    <ul class="nav_items">
+        <li class="nav_links" id="dact">Linear Time Sorting
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li id="countingSort" class="clickedBtn">Counting Sort</li>
+            </ul>
+        </li>
+        <li class="nav_links" id="bft">Brute Force
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li id="bubbleSort" class="clickedBtn">Bubble Sort</li>
+                <li id="insertionSort" class="clickedBtn">Insertion Sort</li>
+                <li id="selectionSort" class="clickedBtn">Selection Sort</li>
+            </ul>
+        </li>
+        <li class="nav_links" id="dpt">Dynamic Programming
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li id="pascalsTriangle" class="clickedBtn">Pascal Triangle</li>
+                <li id="fibonacci" class="clickedBtn">Fibonacci</li>
+            </ul>
+        </li>
+    </ul>
+    <section class="main">
+        <div class="left">
+            <div class="left_data">
+                <div class="btn inp-btn">Input</div>
+                <table>
+                    <tbody id="matrix">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mid">
+
+            <table class="mid_2">
+                <tbody id="matrix3">
+                </tbody>
+            </table>
+
+            <div class="complexity">
+                <div>Time Complexity : O(<span id="time"></span>)</div>
+                <div>Space Complexity : O(<span id="space"></span>)</div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="right_mat">
+                <div class="btn oup-btn">Output</div>
+                <table>
+                    <tbody id="matrix2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
